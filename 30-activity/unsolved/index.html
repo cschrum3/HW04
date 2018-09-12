@@ -8,9 +8,12 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav>Employee Manager</nav>
-  <Aside>
+  <!--top section-->
+  <section id = "top">Employee Manager</section>
+  <!--side section-->
+  <section id = "side">
       <p><span class="Print">Print</span></p>
       <p><span class="Verify">Verify</span></p>
       <p><span class="Lookup">Lookup</span></p>
@@ -18,12 +21,24 @@
       <p><span class="Update">Print</span></p>
       <p><span class="Add">Print</span></p>
       <p><span class="Delete">Print</span></p>
-  </Aside>
+  </section>
   <div id="content">
      <!-- empty div for rendered content -->
   </div>
+
+  <div id="verify">
+      <form>
+          <input id="name" />
+          <button id="submit">Submit</button>
+        </form>
+  </div>
+
   <script src="render.js"></script> 
   <script src="dom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous">
+  </script>
   <script src="app.js"></script>
   <script src ="data.js"></script>
 </body>
